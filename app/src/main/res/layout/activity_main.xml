@@ -9,7 +9,7 @@
 
 
     <TextView
-        android:layout_width="202dp"
+        android:layout_width="322dp"
         android:layout_height="40dp"
         android:text="@string/hello_message" />
 

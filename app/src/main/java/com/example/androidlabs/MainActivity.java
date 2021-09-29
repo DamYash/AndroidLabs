@@ -2,12 +2,18 @@ package com.example.androidlabs;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
+import android.content.Context;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.EditText;
 import android.widget.CompoundButton;
+import android.widget.Toast;
 
 import com.google.android.material.snackbar.Snackbar;
 
@@ -20,18 +26,25 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         setContentView(R.layout.activity_main_linear);
 
-        TextView firstText = findViewById(R.id.firstText);
+        TextView firstText = (TextView) findViewById(R.id.firstText);
 
-        final Button btn = findViewById(R.id.button);
-        btn.setText("New Strings");
-        btn.setOnClickListener( (click) -> {btn.setText("CLICK HERE");} );
+        Button button1 = (Button) findViewById(R.id.button1);
+        button1.setOnClickListener( (click) -> {
+            button1.setText("Here is more information");
+        });
 
-        CheckBox cb = findViewById(R.id.checkbox);
-        /** cb.setOnClickListener( (compoundButton, b) ->
+        CheckBox checkBox = findViewById(R.id.checkbox);
+        checkBox.setChecked(false);
+        checkBox.setOnCheckedChangeListener((cb, b) ->
         {
-            Snackbar.make(theEdit, text:"Checkbox is " + b, Snackbar.LENGTH_LONG)
-            .setAction( text: "Undo", click -> compoundButton( !b))
+            Snackbar.make(checkBox, "The switch is now " + b, Snackbar.LENGTH_LONG)
+                    .setAction( "Undo", click -> checkBox.setChecked( !b))
             .show();
-        });  **/
+        });
+
+        @SuppressLint("UseSwitchCompatOrMaterialCode") Switch simpleSwitch = findViewById(R.id.simpleSwitch);
+
+        ImageButton FlagImage = (ImageButton) findViewById(R.id.FlagImage);
+        FlagImage.setImageResource(R.drawable.flag);
     }
 }

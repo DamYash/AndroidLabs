@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_alignParentTop="true"
+        android:id="@+id/firstText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/GUI"
+        android:textColor="#A1887F"
+        android:textSize="30sp"
+        tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:layout_alignParentLeft="true"
+        android:id="@+id/button1"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="fill"
+        android:layout_marginStart="17dp"
+        android:layout_weight="1"
+        android:backgroundTint="#708090"
+        android:text="@string/ClickButton" />
+
+    <CheckBox
+        android:layout_alignParentRight="true"
+            android:id="@+id/checkbox"
+            android:layout_weight="1"
+            android:layout_gravity="fill"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/check_this_out"
+            android:textColor="#757575"
+            tools:ignore="TextContrastCheck" />
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageButton
+        android:id="@+id/FlagImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill"
+        android:layout_weight="1"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/flag" />
+
+    <Switch
+        android:id="@+id/simpleSwitch"
+        android:layout_weight="1"
+        android:layout_gravity="fill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:text="@string/switch_on_off"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="fill"
+            android:layout_height="50dp"
+            android:hint="Type here"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName|textCapWords"
+            tools:ignore="HardcodedText,InefficientWeight,TextContrastCheck" />
+    </RelativeLayout>
+
+</RelativeLayout>

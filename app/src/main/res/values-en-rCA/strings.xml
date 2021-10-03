@@ -3,11 +3,16 @@
     <string name="app_name">Android Labs</string>
     <string name="hello_message">Bonjour!</string>
     <string name="ButtonText">I\'m a button</string>
-    <string name="GUI">Look at my GUI</string>
-    <string name="ClickButton">CLICK HERE</string>
-    <string name="imgDescription">Canada</string>
+    <string name="title">Look at my GUI eh?!</string>
+    <string name="button">Click Here</string>
+    <string name="checkbox">Please check this out!</string>
+    <string name="switchbox">Switch on / off, sorry</string>
+    <string name="textbox">Type here aboot moose</string>
+
+    <string name="toast">Here\'s more information</string>
+
+    <string name="snackbar_off">The switch is now off</string>
+    <string name="snackbar_on">The switch is now on</string>
+    <string name="snackbar_undo">Undo</string>
     <string name="todo">TODO</string>
-    <string name="switch_on_off">Switch on/off</string>
-    <string name="check_this_out">Check this out!</string>
-    <string name="Button_more">Voici plus d information</string>
 </resources>

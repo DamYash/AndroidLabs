@@ -13,12 +13,10 @@
 
         <TextView
             android:id="@+id/title1"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:gravity="fill"
-            android:text="@string/emailadd"
-            android:textSize="30sp" />
+            android:text="@string/emailadd"/>
     </LinearLayout>
 
     <LinearLayout
@@ -29,9 +27,8 @@
 
         <EditText
             android:id="@+id/textbox1"
-            android:layout_width="0dp"
-            android:layout_height="46dp"
-            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:autofillHints="Type Here"
             android:gravity="fill"
             android:hint="@string/textbox"
@@ -48,12 +45,10 @@
 
         <TextView
             android:id="@+id/title2"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:gravity="fill"
-            android:text="@string/pass"
-            android:textSize="30sp" />
+            android:text="@string/pass"/>
     </LinearLayout>
 
     <LinearLayout
@@ -64,9 +59,8 @@
 
         <EditText
             android:id="@+id/textbox"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:autofillHints=""
             android:gravity="fill"
             android:inputType="textPassword"

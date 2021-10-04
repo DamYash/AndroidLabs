@@ -79,7 +79,6 @@
             android:layout_height="80dp"
             android:text="@string/login"
             android:textAlignment="center" />
-
     </LinearLayout>
 
 </LinearLayout>

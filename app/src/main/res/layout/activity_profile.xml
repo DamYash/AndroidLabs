@@ -80,7 +80,6 @@
         android:gravity="fill"
         android:inputType="textEmailAddress"
             android:autofillHints="Enter your email" />
-
     </LinearLayout>
 
     <LinearLayout

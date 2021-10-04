@@ -19,7 +19,6 @@
     <string name="picbutton">Click the button above to take a picture</string>
 
     <string name="toast">Here\'s more information</string>
-
     <string name="snackbar_off">The switch is now off</string>
     <string name="snackbar_on">The switch is now on</string>
     <string name="snackbar_undo">Undo</string>

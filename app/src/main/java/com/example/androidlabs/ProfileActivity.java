@@ -41,6 +41,7 @@ public class ProfileActivity extends AppCompatActivity {
             }
         });
     }
+
     protected void onStart(){
         super.onStart();
         Log.e(ACTIVITY_NAME, "In onStart");

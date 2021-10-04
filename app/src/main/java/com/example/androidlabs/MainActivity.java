@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+
     public void ProfileActivity(){
         Intent intent = new Intent(this, ProfileActivity.class);
         startActivity(intent);

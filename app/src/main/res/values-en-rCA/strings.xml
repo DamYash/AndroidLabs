@@ -18,7 +18,6 @@
     <string name="emailtitle">Votre email:</string>
     <string name="picture">Ta photo:</string>
     <string name="picbutton">Cliquez sur le bouton ci-dessus pour prendre une photo</string>
-
     <string name="toast">Here\'s more information</string>
 
     <string name="snackbar_off">The switch is now off</string>

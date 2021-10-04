@@ -3,11 +3,21 @@
     <string name="app_name">Android Labs</string>
     <string name="hello_message">Bonjour!</string>
     <string name="ButtonText">I\'m a button</string>
-    <string name="title">Look at my GUI eh?!</string>
+    <string name="title">Regarde mon interface graphique</string>
+    <string name="profiletitle">Votre profil</string>
+    <string name="emailadd">Entrez votre email elle:</string>
+    <string name="pass">Tapez votre mot de passe:</string>
     <string name="button">Click Here</string>
+    <string name="name">Votre nom:</string>
     <string name="checkbox">Please check this out!</string>
     <string name="switchbox">Switch on / off, sorry</string>
-    <string name="textbox">Type here aboot moose</string>
+    <string name="textbox">Tapez l\'e-mail ici</string>
+    <string name="login">Connexion</string>
+    <string name="nametext">Entrez votre nom</string>
+    <string name="email">Entrez votre email</string>
+    <string name="emailtitle">Votre email:</string>
+    <string name="picture">Ta photo:</string>
+    <string name="picbutton">Cliquez sur le bouton ci-dessus pour prendre une photo</string>
 
     <string name="toast">Here\'s more information</string>
 

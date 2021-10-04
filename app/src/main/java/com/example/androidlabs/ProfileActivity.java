@@ -1,5 +1,6 @@
 package com.example.androidlabs;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
@@ -23,11 +24,12 @@ public class ProfileActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                dispatchTakePictureIntent();
             }
         });
     }
 
+    @SuppressLint("QueryPermissionsNeeded")
     private void dispatchTakePictureIntent() {
         Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
         if (takePictureIntent.resolveActivity(getPackageManager()) != null) {
@@ -41,6 +43,7 @@ public class ProfileActivity extends AppCompatActivity {
             Bundle extras = data.getExtras();
             Bitmap imageBitmap = (Bitmap) extras.get("data");
             ImageView mImageButton = null;
+            assert false;
             mImageButton.setImageBitmap(imageBitmap);
         }
     }

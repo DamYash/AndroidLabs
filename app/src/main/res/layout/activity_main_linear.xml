@@ -81,7 +81,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="fill"
-            android:hint="@string/textbox"
+            android:hint="@string/profile_name_hint"
             android:inputType="textPersonName|textCapWords"
             android:autofillHints="Type Here" />
     </LinearLayout>

@@ -68,7 +68,7 @@
         android:layout_columnSpan="2"
         android:layout_columnWeight="1"
         android:gravity="fill"
-        android:hint="@string/textbox"
+        android:hint="@string/profile_name_hint"
         android:inputType="textPersonName|textCapWords"
         android:autofillHints="Type Here" />
 

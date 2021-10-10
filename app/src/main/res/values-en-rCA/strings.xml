@@ -4,25 +4,29 @@
     <string name="hello_message">Bonjour!</string>
     <string name="ButtonText">I\'m a button</string>
     <string name="title">Regarde mon interface graphique</string>
-    <string name="profiletitle">Votre profil</string>
-    <string name="emailadd">Entrez votre email elle:</string>
-    <string name="pass">Tapez votre mot de passe:</string>
     <string name="button">Click Here</string>
-    <string name="name">Votre nom:</string>
     <string name="checkbox">Please check this out!</string>
     <string name="switchbox">Switch on / off, sorry</string>
-    <string name="textbox">Tapez l\'e-mail ici</string>
-    <string name="login">Connexion</string>
-    <string name="nametext">Entrez votre nom</string>
-    <string name="email">Entrez votre email</string>
-    <string name="emailtitle">Votre email:</string>
-    <string name="picture">Ta photo:</string>
-    <string name="picbutton">Cliquez sur le bouton ci-dessus pour prendre une photo</string>
-
-    <string name="toast">Here\'s more information</string>
-
-    <string name="snackbar_off">The switch is now off</string>
-    <string name="snackbar_on">The switch is now on</string>
-    <string name="snackbar_undo">Undo</string>
+    <string name="toast">Voici plus d</string>
+    <string name="snackbar_off">L\'interrupteur est maintenant éteint</string>
+    <string name="snackbar_on">L\'interrupteur est maintenant allumé</string>
+    <string name="snackbar_undo">Annuler</string>
     <string name="todo">TODO</string>
+    <!-- Login Activity -->
+    <string name="email">Entrez votre email</string>
+    <string name="email_hint">Tapez l\'e-mail ici</string>
+    <string name="password">Tapez votre mot de passe canadien:</string>
+    <string name="login_button">Connexion</string>
+    !-- Profile Activity -->
+    <string name="profile_title">YVotre profil</string>
+    <string name="profile_name">Votre nom:</string>
+    <string name="profile_name_hint">Entrez votre nom</string>
+    <string name="profile_email">Votre email:</string>
+    <string name="profile_email_hint">Entrez votre email ici</string>
+    <string name="profile_picture">Ta photo:</string>
+    <string name="profile_picture_hint">Cliquez sur le bouton ci-dessus pour prendre une photo</string>
+
+    //Lab 4:
+    <string name="chatbutton">Aller discuter</string>
+
 </resources>

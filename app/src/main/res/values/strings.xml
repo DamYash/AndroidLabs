@@ -2,27 +2,31 @@
     <string name="app_name">Android Labs</string>
     <string name="hello_message">Hello World!</string>
     <string name="ButtonText">I\'m a button</string>
-    <string name="emailadd">Enter your email address:</string>
-    <string name="pass">Enter your password:</string>
     <string name="title">Look at my GUI</string>
-    <string name="profiletitle">Your profile</string>
-    <string name="name">Your name:</string>
-    <string name="nametext">Enter your name</string>
     <string name="button">Click Here</string>
     <string name="checkbox">Check this out!</string>
     <string name="switchbox">Switch on / off</string>
-    <string name="textbox">Type email here</string>
-    <string name="login">Login</string>
-    <string name="email">Enter your email</string>
-    <string name="emailtitle">Your email:</string>
-    <string name="picture">Your picture:</string>
-    <string name="picbutton">Click the button above to take a picture</string>
-
     <string name="toast">Here\'s more information</string>
-
     <string name="snackbar_off">The switch is now off</string>
     <string name="snackbar_on">The switch is now on</string>
     <string name="snackbar_undo">Undo</string>
     <string name="todo">TODO</string>
+    <!-- Login Activity -->
+    <string name="email">Enter your email address:</string>
+    <string name="email_hint">Type email here</string>
+    <string name="password">Type your password:</string>
+    <string name="login_button">Login</string>
+
+    <!-- Profile Activity -->
+    <string name="profile_title">Your profile</string>
+    <string name="profile_name">Your name:</string>
+    <string name="profile_name_hint">Enter your name</string>
+    <string name="profile_email">Your email:</string>
+    <string name="profile_email_hint">Enter your email here</string>
+    <string name="profile_picture">Your picture:</string>
+    <string name="profile_picture_hint">Click the button above to take a picture.</string>
+
+    //Lab 4:
+    <string name="chatbutton">Go to chat</string>
 
 </resources>

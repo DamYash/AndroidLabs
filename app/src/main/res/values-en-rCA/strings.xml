@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <resources>
     <string name="app_name">Android Labs</string>
     <string name="hello_message">Bonjour!</string>
@@ -28,5 +29,8 @@
 
     //Lab 4:
     <string name="chatbutton">Aller discuter</string>
+    <string name="EditText">Écrivez ici</string>
+    <string name="send_button">ENVOYER</string>
+    <string name="receive_button">RECEVOIR</string>
 
 </resources>

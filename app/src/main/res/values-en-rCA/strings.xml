@@ -28,5 +28,8 @@
 
     //Lab 4:
     <string name="chatbutton">Aller discuter</string>
+    <string name="EditText">Écrivez ici</string>
+    <string name="send_button">ENVOYER</string>
+    <string name="receive_button">RECEVOIR</string>
 
 </resources>

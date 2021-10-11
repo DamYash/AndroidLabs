@@ -55,7 +55,6 @@ public class MessageAdapter extends ArrayAdapter<Message> {
             outgoing_message_container.setVisibility(View.VISIBLE);
             incoming_message_container.setVisibility(View.GONE);
         }
-
         return view;
     }
 

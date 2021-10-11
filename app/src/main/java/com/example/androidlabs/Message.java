@@ -1,5 +1,4 @@
 package com.example.androidlabs;
-
 public class Message {
     private int direction;
     private String text;

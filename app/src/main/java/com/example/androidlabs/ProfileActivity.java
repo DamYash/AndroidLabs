@@ -40,6 +40,7 @@ public class ProfileActivity extends AppCompatActivity {
         });
 
     }
+
     public void openChatRoomActivity(){
         Intent intent = new Intent(this, ChatRoomActivity.class);
         startActivity(intent);

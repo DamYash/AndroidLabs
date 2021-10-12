@@ -58,7 +58,5 @@ public class MessageAdapter extends ArrayAdapter<Message> {
         return view;
     }
 
-    public long getItemId (int position){
-        return 0;
     }
 }

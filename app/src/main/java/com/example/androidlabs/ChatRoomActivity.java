@@ -1,5 +1,4 @@
 package com.example.androidlabs;
-
 import android.content.Context;
 import android.os.Bundle;
 import android.view.View;

@@ -11,7 +11,6 @@ public class Message {
     public int getDirection(){
         return this.direction;
     }
-
     public String getText(){
         return this.text;
     }

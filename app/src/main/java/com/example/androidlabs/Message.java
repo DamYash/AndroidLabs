@@ -10,6 +10,7 @@ public class Message {
         this.text = text;
     }
 
+
     public Long getId() {
         return this.id;
     }

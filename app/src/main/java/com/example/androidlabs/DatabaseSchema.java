@@ -1,6 +1,7 @@
 package com.example.androidlabs;
 
 public class DatabaseSchema {
+
     public static final class Messages {
         public static final String NAME = "messages_";
 

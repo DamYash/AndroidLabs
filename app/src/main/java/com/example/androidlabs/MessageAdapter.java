@@ -29,6 +29,11 @@ public class MessageAdapter extends ArrayAdapter<Message> {
         return messages.get(position);
     }
 
+    @Override
+    public long getItemId(int position) {
+        return messages.get(position).getId();
+    }
+
     public View getView(int position, View view, ViewGroup parent) {
 
         if (view == null) {
@@ -43,7 +48,7 @@ public class MessageAdapter extends ArrayAdapter<Message> {
         Message message = messages.get(position);
 
         //FOR INCOMING MESSAGES
-        if(message.getDirection() == 0){
+        if(message.isSend()){
             incoming_message_view.setText(message.getText());
             incoming_message_container.setVisibility(View.VISIBLE);
             outgoing_message_container.setVisibility(View.GONE);
@@ -59,4 +64,3 @@ public class MessageAdapter extends ArrayAdapter<Message> {
     }
 
     }
-}

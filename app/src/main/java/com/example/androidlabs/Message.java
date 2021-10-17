@@ -1,18 +1,25 @@
 package com.example.androidlabs;
 public class Message {
-    private int direction;
+    private Long id;
+    private boolean isSend;
     private String text;
 
-    public Message(int direction, String text){
-        this.direction = direction;
+    public Message(Long id, boolean isSend, String text){
+        this.id = id;
+        this.isSend = isSend;
         this.text = text;
     }
 
-    public int getDirection(){
-        return this.direction;
+    public Long getId() {
+        return this.id;
+    }
+
+    public boolean isSend(){
+        return this.isSend;
     }
 
     public String getText(){
         return this.text;
     }
 }
+

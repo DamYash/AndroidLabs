@@ -11,5 +11,4 @@ public class DatabaseSchema {
             public static final String TEXT = Messages.NAME + "text";
         }
     }
-
 }

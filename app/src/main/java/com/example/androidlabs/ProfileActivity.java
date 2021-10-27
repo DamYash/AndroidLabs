@@ -19,6 +19,12 @@ public class ProfileActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
 
+        Button button2 = (Button) findViewById(R.id.weather);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) { openWeatherForecast();}
+        });
+
         Button button1 = (Button) findViewById(R.id.chatbutton);
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -36,6 +42,12 @@ public class ProfileActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    public void openWeatherForecast()
+    {
+        Intent wintent = new Intent(this, WeatherForecast.class);
+        startActivity(wintent);
     }
 
     public void openChatRoomActivity(){

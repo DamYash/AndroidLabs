@@ -33,4 +33,9 @@
     <string name="send_button">ENVOYER</string>
     <string name="receive_button">RECEVOIR</string>
 
+    //Lab 6;
+    <string name="weather">Prévisions météorologiques</string>
+    <string name="cW">actuelle</string>
+    <string name="minT">minimale</string>
+    <string name="maxT">maximale</string>
 </resources>

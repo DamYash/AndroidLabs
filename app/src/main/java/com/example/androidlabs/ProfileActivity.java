@@ -1,5 +1,4 @@
 package com.example.androidlabs;
-
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -9,7 +8,6 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 public class ProfileActivity extends AppCompatActivity {
@@ -21,6 +19,12 @@ public class ProfileActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
 
+        Button button2 = (Button) findViewById(R.id.weather);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) { openWeatherForecast();}
+        });
+
         Button button1 = (Button) findViewById(R.id.chatbutton);
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -28,7 +32,6 @@ public class ProfileActivity extends AppCompatActivity {
                 openChatRoomActivity();
             }
         });
-
         // When the picture button is clicked, start the camera intent
         ImageButton button = (ImageButton) findViewById(R.id.profile_picture);
         button.setOnClickListener(new View.OnClickListener() {
@@ -41,11 +44,16 @@ public class ProfileActivity extends AppCompatActivity {
 
     }
 
+    public void openWeatherForecast()
+    {
+        Intent wintent = new Intent(this, WeatherForecast.class);
+        startActivity(wintent);
+    }
+
     public void openChatRoomActivity(){
         Intent intent = new Intent(this, ChatRoomActivity.class);
         startActivity(intent);
     }
-
     @SuppressLint("QueryPermissionsNeeded")
     private void dispatchTakePictureIntent() {
         Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
@@ -53,7 +61,6 @@ public class ProfileActivity extends AppCompatActivity {
             startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE);
         }
     }
-
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -65,38 +72,29 @@ public class ProfileActivity extends AppCompatActivity {
         }
         Log.e(ACTIVITY_NAME, "in function" + "onActivityResult();");
     }
-
     @Override
     protected void onStart() {
         super.onStart();
         Log.e(ACTIVITY_NAME, "in function" + "onStart();");
     }
-
     @Override
     protected void onPause() {
         super.onPause();
         Log.e(ACTIVITY_NAME, "in function" + "onPause();");
     }
-
     @Override
     protected void onResume() {
         super.onResume();
         Log.e(ACTIVITY_NAME, "in function" + "onResume();");
     }
-
     @Override
     protected void onStop() {
         super.onStop();
         Log.e(ACTIVITY_NAME, "in function" + "onStop;");
     }
-
     @Override
     protected void onDestroy() {
         super.onDestroy();
         Log.e(ACTIVITY_NAME, "in function" + "onDestroy();");
     }
 }
-
-
-
-

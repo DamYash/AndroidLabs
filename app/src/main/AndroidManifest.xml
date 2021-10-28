@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.androidlabs">
 
+    <uses-feature android:name="android.hardware.type.watch"/>
     <uses-feature
         android:name="android.hardware.camera"
         android:required="true" />
@@ -9,6 +10,7 @@
         android:name="android.permission.INTERNET" />
 
     <application
+
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -17,6 +19,7 @@
         android:usesCleartextTraffic="true"
         android:theme="@style/Theme.AndroidLabs">
         <activity
+            android:theme="@style/AppTheme"
             android:name=".WeatherForecast"
             android:exported="true" />
         <activity

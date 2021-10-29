@@ -10,23 +10,28 @@ import java.util.List;
 public class MessageAdapter extends ArrayAdapter<Message> {
     private final Activity context;
     private final List<Message> messages;
+
     public MessageAdapter(Activity context, List<Message> messages) {
         super(context, 0, messages);
         this.context = context;
         this.messages = messages;
     }
+
     @Override
     public int getCount() {
         return messages.size();
     }
+
     @Override
     public Message getItem(int position) {
         return messages.get(position);
     }
+
     @Override
     public long getItemId(int position) {
         return messages.get(position).getId();
     }
+
     public View getView(int position, View view, ViewGroup parent) {
         if (view == null) {
             view = LayoutInflater.from(getContext()).inflate(R.layout.message, parent, false);
@@ -37,7 +42,7 @@ public class MessageAdapter extends ArrayAdapter<Message> {
         LinearLayout outgoing_message_container = view.findViewById(R.id.outgoing_message_container);
         Message message = messages.get(position);
         //FOR INCOMING MESSAGES
-        if(message.isSend()){
+        if (message.isSend()) {
             incoming_message_view.setText(message.getText());
             incoming_message_container.setVisibility(View.VISIBLE);
             outgoing_message_container.setVisibility(View.GONE);
@@ -50,4 +55,5 @@ public class MessageAdapter extends ArrayAdapter<Message> {
         }
         return view;
     }
+}
 

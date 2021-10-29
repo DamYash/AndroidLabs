@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/daman/AndroidStudioProjects/AndroidLabs/app/src/main/res/layout-notround/activity_weather_forecast.xml" value="1.261513157894737" />
         <entry key="..\:/Users/daman/AndroidStudioProjects/AndroidLabs/app/src/main/res/layout-round/activity_weather_forecast.xml" value="1.6700581395348837" />
         <entry key="..\:/Users/daman/AndroidStudioProjects/AndroidLabs/app/src/main/res/layout/activity_main.xml" value="0.31890660592255127" />
         <entry key="..\:/Users/daman/AndroidStudioProjects/AndroidLabs/app/src/main/res/layout/activity_main_grid.xml" value="0.30978260869565216" />

@@ -41,7 +41,6 @@ public class ProfileActivity extends AppCompatActivity {
                 startActivityForResult(cameraIntent, REQUEST_IMAGE_CAPTURE);
             }
         });
-
     }
 
     public void openWeatherForecast()

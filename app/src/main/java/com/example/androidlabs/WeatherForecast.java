@@ -174,7 +174,6 @@ public class WeatherForecast extends AppCompatActivity {
             TextView uvRating = findViewById(R.id.UV);
             uvRating.setText("The uvRating is: " + uv);
 
-
             pb.setVisibility(View.INVISIBLE);
         }
 

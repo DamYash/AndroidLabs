@@ -7,9 +7,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.TextView;
-
 import androidx.fragment.app.Fragment;
-
 
 public class DetailsFragment extends Fragment {
 
@@ -17,7 +15,6 @@ public class DetailsFragment extends Fragment {
     public static final String message_text = "msg_text";
     public static final String message_isSent = "msg_isSent";
     public static final String message_tab = "message_tab";
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

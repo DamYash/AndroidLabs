@@ -167,7 +167,6 @@ public class ChatRoomActivity extends AppCompatActivity {
             } finally {
                 database.close();
             }
-
             updateInterface();
         }
     }

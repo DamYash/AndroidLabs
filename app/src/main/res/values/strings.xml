@@ -39,6 +39,8 @@
     <string name="minT">Min </string>
     <string name="maxT">Max </string>
     <!-- TODO: Remove or change this placeholder text -->
+
+    //Lab 7:
     <string name="messagehere">Message Here</string>
     <string name="id">ID=</string>
     <string name="Sendmessage">Is a Send Message</string>

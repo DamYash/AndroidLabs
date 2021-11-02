@@ -38,4 +38,9 @@
     <string name="cW">actuelle</string>
     <string name="minT">minimale</string>
     <string name="maxT">maximale</string>
+
+    <string name="messagehere">Message Here</string>
+    <string name="id">ID=</string>
+    <string name="Sendmessage">Is a Send Message</string>
+    <string name="hide_button">HIDE</string>
 </resources>

@@ -1,7 +1,9 @@
 package com.example.androidlabs;
+
 import android.annotation.SuppressLint;
 import android.content.ContentValues;
 import android.content.Context;
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -11,18 +13,25 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.ListView;
+
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class ChatRoomActivity extends AppCompatActivity {
+    public static final String ITEM_SELECTED = "ITEM";
+    public static final String ITEM_POSITION = "POSITION";
+    public static final String ITEM_ID = "ID";
+
     private MessageAdapter messageAdapter;
     private ListView listView;
     private List<Message> messages;
     private EditText newMessageView;
     private String newMessage;
     private Context context;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,13 +42,41 @@ public class ChatRoomActivity extends AppCompatActivity {
         messageAdapter = new MessageAdapter(this, messages);
         listView = (ListView) findViewById(R.id.theListView);
         listView.setAdapter(messageAdapter);
+
+        boolean isTablet = findViewById(R.id.fragmentLocation) != null;
+
+        listView.setOnItemClickListener((list, item, position, id) ->{
+            Bundle dataToPass = new Bundle();
+            dataToPass.putString(DetailsFragment.message_text, messages.get(position).getText());
+            dataToPass.putLong(DetailsFragment.message_id, messages.get(position).getId());
+            dataToPass.putBoolean(DetailsFragment.message_tab, isTablet);
+            dataToPass.putBoolean(DetailsFragment.message_isSent, messages.get(position).isSend());
+
+
+            if (isTablet)
+            {
+                DetailsFragment dfragment = new DetailsFragment();
+                dfragment.setArguments(dataToPass);
+                getSupportFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.fragmentLocation, dfragment)
+                        .commit();
+            } else
+            {
+                Intent nextActivity = new Intent(this, EmptyActivity.class);
+                nextActivity.putExtras(dataToPass);
+                startActivity(nextActivity);
+            }
+        });
+
         listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
             public boolean onItemLongClick(AdapterView<?> arg0, View arg1, int position, long arg3) {
                 deleteMessage(position);
-                return false;
+                return true;
             }
         });
+
         newMessageView = (EditText) findViewById(R.id.EditText);
         findViewById(R.id.send_button).setOnClickListener(view -> {
             View focusView = ChatRoomActivity.this.getCurrentFocus();

@@ -6,6 +6,7 @@
     <string name="title">Look at my GUI</string>
     <string name="button">Click Here</string>
     <string name="checkbox">Check this out!</string>
+
     <string name="switchbox">Switch on / off</string>
     <string name="toast">Here\'s more information</string>
     <string name="snackbar_off">The switch is now off</string>
@@ -37,5 +38,10 @@
     <string name="cW">Current </string>
     <string name="minT">Min </string>
     <string name="maxT">Max </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="messagehere">Message Here</string>
+    <string name="id">ID=</string>
+    <string name="Sendmessage">Is a Send Message</string>
+    <string name="hide_button">HIDE</string>
 
 </resources>

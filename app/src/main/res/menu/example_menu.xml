@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/item1"
+        android:title="@string/delivery"
+        android:icon="@drawable/delivery"
+        android:orderInCategory="50"
+        app:showAsAction="always"/>  <!-- This uses showAsAction=always, so look at icon= parameter -->
+
+
+    <item android:id="@+id/item2"
+        android:orderInCategory="50"
+        android:icon="@drawable/paypal"
+        app:showAsAction="always|collapseActionView"
+        android:title="@string/paypal"
+        tools:ignore="AlwaysShowAction" />
+
+
+    <item android:id="@+id/item3"
+        android:icon="@drawable/shop"
+        android:title="@string/shop"
+        app:showAsAction="always|collapseActionView"
+        android:orderInCategory="50"/>
+
+
+    <item android:id="@+id/item4"
+        android:title="More Info"
+        app:showAsAction="never"
+        android:orderInCategory="400"/>
+
+    <item android:id="@+id/item5"
+        android:title="Contact Us"
+        app:showAsAction="never"
+        android:orderInCategory="400"/>
+
+</menu>

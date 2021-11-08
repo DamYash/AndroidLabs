@@ -13,11 +13,20 @@ import androidx.appcompat.app.AppCompatActivity;
 public class ProfileActivity extends AppCompatActivity {
     private static final int REQUEST_IMAGE_CAPTURE = 1;
     private static final String ACTIVITY_NAME = "ProfileActivity";
+    private static final int LAUNCH_TEST_TOOLBAR = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
+
+        Button Toolbutton = (Button) findViewById(R.id.toolbar);
+        Toolbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openTestToolbar();
+            }
+        });
 
         Button button2 = (Button) findViewById(R.id.weather);
         button2.setOnClickListener(new View.OnClickListener() {
@@ -41,6 +50,12 @@ public class ProfileActivity extends AppCompatActivity {
                 startActivityForResult(cameraIntent, REQUEST_IMAGE_CAPTURE);
             }
         });
+    }
+
+    private void openTestToolbar()
+    {
+        Intent Tintent = new Intent(this, TestToolbar.class);
+        startActivityForResult(Tintent, LAUNCH_TEST_TOOLBAR);
     }
 
     public void openWeatherForecast()

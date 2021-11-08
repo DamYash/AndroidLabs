@@ -46,4 +46,13 @@
     <string name="Sendmessage">Is a Send Message</string>
     <string name="hide_button">HIDE</string>
 
+    //Lab8:
+    <string name="toolbar">Go to Toolbar Page</string>
+    <string name="aButton">HI</string>
+    <string name="delivery">Track Delivery</string>
+    <string name="paypal">Payment</string>
+    <string name="shop">SHOP</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
 </resources>
